@@ -1,0 +1,67 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', type='text/css', href='public/bootstrap.min.css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='public/font-awesome.min.css')
+    | &#x9;
+    link(rel='icon', type='image/png', href='https://i.imgur.com/078coq5.png')
+    | &#x9;
+    link(rel='icon', href='https://i.imgur.com/078coq5.png', type='image', sizes='16x16')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='public/animate.min.css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='stylesheets/index.css')
+    | &#x9;
+    link(rel='stylesheet', type='text/css', href='stylesheets/login.css')
+    | &#x9;
+    script(src='public/jquery.min.js')
+    | &#x9;
+    script(src='public/bootstrap.min.js')
+    | &#x9;
+    script(src='public/typed.min.js')
+    | &#x9;
+    script(src='public/jquery.smooth-scroll.min.js')
+    | &#x9;
+    script(src='public/jquery.ba-throttle-debounce.min.js')
+    | &#x9;
+    title hackHCST I
+  body
+    nav#main-navigation.navbar.navbar-default.navbar-fixed-top.in-top.navbar-transparent
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+          span.icon-bar
+          |         
+          span.icon-bar
+          |         
+          span.icon-bar
+      |   
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-left
+            li
+              a(href='/') Home
+            |         
+            li
+              a(href='/login') Login
+            |         
+            li
+              a(href='/login', style='color: black;').active Register
+    // Home section
+    section#home.jumbotron.section.vertical-parent
+      .container.vertical-child
+        .col-sm-10.col-md-10.col-centered
+            .login
+              h2.login-header Registration Closed
+    
+  script(src="/javascripts/jquery-3.2.1.min.js")
+  script.
+    test = #{message};
+    if(test){
+       $(".flashes").show();
+    }
+    else
+    {
+        $(".flashes").hide();
+    }
